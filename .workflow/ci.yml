@@ -33,7 +33,7 @@ jobs:
       - name: Upload MLflow Model & Training Artifacts to GitHub Actions
         uses: actions/upload-artifact@v4
         with:
-          name: mlflow-model-artifacts
+          name: mlflow-model-artifacts-run-${{ github.run_number }}
           path: |
             mlruns/
           retention-days: 14
